@@ -1,12 +1,26 @@
+body {
+  background-color: bisque;
+}
+
 h1 {
   text-align: center;
 }
 
-section {
-  width: 100%;
+.wrapper {
+  width: 60%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.todo-wrapper {
+  width: 100%;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2px;
+  box-shadow: 1px 1px 5px gray;
 }
 
 h2 {
@@ -18,23 +32,6 @@ h2 {
 button {
   background-color: transparent;
   border: none;
-}
-
-.container {
-  width: 100%;
-  max-width: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.todolist-container {
-  width: 100%;
-  background-color: whitesmoke;
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 2px;
-  box-shadow: 1px 1px 5px gray;
 }
 
 .icon {
