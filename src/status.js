@@ -18,35 +18,10 @@ export function addLocalTask(task) {
   window.location.reload();
 }
 
-export function removeLocalTask(id) {
-  const tasks = getLocalTasks();
-  tasks.forEach((task, index) => {
-    if (task.id === parseInt(id, 10)) {
-      tasks.splice(index, 1);
-    }
-  });
+export function removeLocalTask(tasks) {
+  tasks = tasks.filter((elem) => elem.completed === false);
 
   localStorage.setItem('tasks', JSON.stringify(tasks));
-}
-
-export function loadListElement(taskIndex, taskDescription) {
-  const li = document.createElement('li');
-  li.classList.add(
-    'list-group-item',
-    'justify-content-between',
-    'd-flex',
-    'align-items-center',
-    // eslint-disable-next-line comma-dangle
-    'task'
-  );
-  li.innerHTML = `<div class="form-check">
-  <input class="checkbox" type="checkbox"/>
-  <input class="desc" type="text" value= "${taskDescription}"/>
- 
-</div>
-
-<i class="remove fa fa-trash-o delete" id="${taskIndex}"></i>`;
-  return li;
 }
 
 // old code
