@@ -23,9 +23,7 @@ const loadListElement = () => {
   <input class="checkbox" type="checkbox" ${taskCompleted}/>
   <input class="desc" type="text" value= "${taskDescription}" id="${taskIndex}"/>
  
-</div>
-
-<i class="remove fa fa-trash-o delete" id="${taskIndex}"></i>`;
+</div>`;
 
   loadTask.append(li);
 };
