@@ -77,7 +77,6 @@ reLoad();
 clearList.addEventListener('click', () => {
   let tasks = tk.getLocalTasks();
   tasks = tasks.filter((elem) => elem.completed === false);
-  console.log(tasks);
   window.location.reload();
 
   localStorage.setItem('tasks', JSON.stringify(tasks));
@@ -87,15 +86,11 @@ const desc = document.querySelectorAll('.desc');
 desc.forEach((description) => {
   description.addEventListener('change', (e) => {
     const tasks = tk.getLocalTasks();
-    console.log(tasks);
     tasks.forEach((item) => {
-      console.log(item.id, e.target.id);
       if (item.id === parseInt(e.target.id, 10)) {
         item.desc = description.value;
       }
     });
     localStorage.setItem('tasks', JSON.stringify(tasks));
-
-    console.log('yes');
   });
 });
