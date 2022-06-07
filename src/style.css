@@ -1,0 +1,123 @@
+body {
+  background-color: bisque;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 200px;
+}
+
+.todo-wrapper {
+  width: 100%;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2px;
+  box-shadow: 1px 1px 5px gray;
+}
+
+h2 {
+  margin: 0;
+  padding: 2%;
+  background-color: white;
+}
+
+form {
+  display: flex;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.icon1 {
+  float: right;
+  color: rgb(142, 147, 151);
+  cursor: pointer;
+  font-size: medium;
+  padding-right: 2%;
+}
+
+.form-check {
+  width: 100%;
+}
+
+.task {
+  background-color: white;
+  display: flex;
+  padding: 2%;
+  margin-bottom: 3px;
+}
+
+.todo-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: rgb(82, 59, 59);
+  margin-bottom: 5px;
+}
+
+.todo-input {
+  width: 85%;
+  border: none;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.todo-input:focus {
+  outline: none;
+  border: 2px solid rgb(62, 63, 59);
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+.clear {
+  padding: 2%;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.clear-container {
+  text-align: center;
+}
+
+.task-text:focus {
+  outline: none;
+}
+
+#taskForm {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#taskSubmit {
+  font-size: 16px;
+  width: 20%;
+  background-color: white;
+  margin: 0;
+  cursor: pointer;
+  padding-left: 10%;
+}
+
+.completed {
+  text-decoration: line-through;
+}

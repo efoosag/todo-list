@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple ToDo list</title>
+    <script
+      src="https://kit.fontawesome.com/9c25278351.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section>
+      <div class="wrapper">
+        <header>
+          <h1>To Do Lists</h1>
+        </header>
+        <div class="todo-wrapper">
+          <h2>Task To Do<i class="fas fa-sync icon1"></i></h2>
+          <form id="todo-form" class="todo-form">
+            <input
+              class="todo-input"
+              type="text"
+              name="New Task"
+              id="newTask"
+              placeholder="Add to your list..."
+              required
+            />
+            <button id="taskSubmit" type="submit">
+              <i class="fas fa-plus-square icon"></i>
+            </button>
+          </form>
+          <ul class="todo-list"></ul>
+          <div class="clear-container">
+            <button class="clear" type="button">Delete Selected Task</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
