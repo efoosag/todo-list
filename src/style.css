@@ -6,6 +6,11 @@ h1 {
   text-align: center;
 }
 
+li {
+  padding: 0;
+  margin: 0;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -37,18 +42,6 @@ button {
   border: none;
 }
 
-.icon {
-  width: 16px;
-  width: 15px;
-  padding-left: 5%;
-}
-
-.input-icon {
-  width: 100%;
-  margin-bottom: 1px;
-  background-color: white;
-}
-
 .icon1 {
   float: right;
   color: rgb(142, 147, 151);
@@ -57,20 +50,23 @@ button {
   padding-right: 2%;
 }
 
+.form-check {
+  width: 100%;
+}
+
 .task {
   background-color: white;
   display: flex;
-  padding: 3%;
+  padding: 2%;
+  margin-bottom: 3px;
 }
 
 .todo-list {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: whitesmoke;
-  row-gap: 2px;
+  background-color: rgb(82, 59, 59);
+  margin-bottom: 5px;
 }
 
 .todo-input {
@@ -81,32 +77,19 @@ button {
   cursor: pointer;
   margin: 0;
   box-sizing: border-box;
+  font-size: 18px;
 }
 
 .todo-input:focus {
   outline: none;
-  border: 2px solid rgb(103, 160, 11);
+  border: 2px solid rgb(62, 63, 59);
 }
 
 input::placeholder {
   font-style: italic;
 }
 
-.task-check {
-  margin-right: 2%;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: whitesmoke;
-  row-gap: 2px;
-}
-
-.clearer {
+.clear {
   padding: 2%;
   cursor: pointer;
   font-size: 20px;
@@ -115,25 +98,6 @@ input::placeholder {
 
 .clear-container {
   text-align: center;
-}
-
-.drag {
-  margin-left: 8px;
-  cursor: move;
-  color: gray;
-  font-size: 18px;
-}
-
-.drag:active {
-  cursor: grabbing;
-}
-
-.task-text {
-  border: none;
-  box-sizing: border-box;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
 }
 
 .task-text:focus {

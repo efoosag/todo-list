@@ -12,17 +12,16 @@ const taskCompleted = '';
 const loadListElement = () => {
   const li = document.createElement('li');
   li.classList.add(
-    'list-group-item',
-    'justify-content-between',
-    'd-flex',
-    'align-items-center',
+    // 'list-group-item',
+    // 'justify-content-between',
+    // 'd-flex',
+    // 'align-items-center',
     // eslint-disable-next-line comma-dangle
     'task'
   );
   li.innerHTML = `<div class="form-check">
-  <input class="checkbox" type="checkbox" ${taskCompleted}/>
-  <input class="desc" type="text" value= "${taskDescription}" id="${taskIndex}"/>
- 
+  <input class="checkbox task-check" type="checkbox" ${taskCompleted}/>
+  <input class="desc todo-input" type="text" value= "${taskDescription}" id="${taskIndex}"/> 
 </div>`;
 
   loadTask.append(li);
