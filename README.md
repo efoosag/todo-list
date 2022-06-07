@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+
 # To Do List
 
 > This project is geared towards applying acguired skills for development of my porfolio through the following practices:
@@ -11,6 +12,8 @@
 - Descriptive and Understanding Commit Messages and ReadMe file
 - Pull Request in Github for code review
 - Include Add and Delete Functionality
+- Include Add and Delete Functionality
+- To DO list Completes Status Update
 
 ## Built With
 
@@ -115,8 +118,8 @@ I Like to Thank Microverse for creating this platform.
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
-=======
+# This project is [MIT](./MIT.md) licensed.
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/efoosag/todo-list/edit/add-remove-lists/README.md) to maintain and preview the content for your website in Markdown files.
@@ -131,7 +134,9 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 Syntax highlighted code block
 
 # Header 1
+
 ## Header 2
+
 ### Header 3
 
 - Bulleted
@@ -154,4 +159,5 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
->>>>>>> cbf4f1fd3c901abf8e82bee376fe490e039b196e
+
+> > > > > > > cbf4f1fd3c901abf8e82bee376fe490e039b196e
