@@ -43,15 +43,7 @@ checkBox.forEach((item) => {
   item.addEventListener('click', () => {
     const tasks = tk.getLocalTasks();
     tasks.forEach((elem) => {
-      if (elem.id === parseInt(item.nextElementSibling.id, 10)) {
-        if (elem.completed === false) {
-          item.nextElementSibling.classList.add('completed');
-          elem.completed = true;
-        } else {
-          item.nextElementSibling.classList.remove('completed');
-          elem.completed = false;
-        }
-      }
+      tk.completedStatus(elem, item);
       localStorage.setItem('tasks', JSON.stringify(tasks));
     });
   });

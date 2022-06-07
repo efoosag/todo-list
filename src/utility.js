@@ -17,3 +17,15 @@ export function addLocalTask(task) {
   localStorage.setItem('tasks', JSON.stringify(tasks));
   window.location.reload();
 }
+
+export function completedStatus(elem, item) {
+  if (elem.id === parseInt(item.nextElementSibling.id, 10)) {
+    if (elem.completed === false) {
+      item.nextElementSibling.classList.add('completed');
+      elem.completed = true;
+    } else {
+      item.nextElementSibling.classList.remove('completed');
+      elem.completed = false;
+    }
+  }
+}
