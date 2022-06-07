@@ -7,11 +7,10 @@ h1 {
 }
 
 .wrapper {
-  width: 60%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 200px;
 }
 
 .todo-wrapper {
@@ -27,6 +26,10 @@ h2 {
   margin: 0;
   padding: 2%;
   background-color: white;
+}
+
+form {
+  display: flex;
 }
 
 button {

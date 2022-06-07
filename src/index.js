@@ -1,4 +1,4 @@
-import * as tk from './status.js';
+import * as tk from './utility.js';
 import './style.css';
 
 const loadTask = document.querySelector('.todo-list');
@@ -77,7 +77,11 @@ reLoad();
 clearList.addEventListener('click', () => {
   let tasks = tk.getLocalTasks();
   tasks = tasks.filter((elem) => elem.completed === false);
-  window.location.reload();
+  for (let j = 0; j < tasks.length; j += 1) {
+    tasks[j].id = j + 1;
+  }
+  reLoad();
+  document.location.reload();
 
   localStorage.setItem('tasks', JSON.stringify(tasks));
 });
