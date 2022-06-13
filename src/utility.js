@@ -1,10 +1,7 @@
 export function getLocalTasks() {
-  let tasks;
-  if (window.localStorage.getItem('tasks') === null) {
-    tasks = [];
-  } else {
-    tasks = JSON.parse(window.localStorage.getItem('tasks'));
-  }
+  let tasks = [];
+  tasks = JSON.parse(window.localStorage.getItem('tasks')) || [];
+
   return tasks;
 }
 
