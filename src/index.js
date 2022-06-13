@@ -20,7 +20,7 @@ const loadListElement = () => {
   loadTask.append(li);
 };
 
-const displayBook = () => {
+const displayTask = () => {
   const tasks = tk.getLocalTasks();
   tasks.forEach((task) => {
     taskDescription = task.desc;
@@ -36,7 +36,7 @@ form.addEventListener('submit', (e) => {
   tk.addLocalTask(addDesc);
 });
 
-displayBook();
+displayTask();
 
 const checkBox = document.querySelectorAll('.checkbox');
 checkBox.forEach((item) => {
